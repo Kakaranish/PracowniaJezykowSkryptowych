@@ -47,7 +47,7 @@ if ($digits !~ /^([2-9]+)$/)
 }
 
 my $dictionary = new T9Dictionary();
-$dictionary->prepare("words10k.txt");
+$dictionary->prepare("words.txt");
 
 my @words = $dictionary->get_starting_with($digits);
 open(my $file_handler, '>', "output.txt");
