@@ -22,5 +22,14 @@ The game lasts until one's player ships are destroyed.
 - `-h` or `--help` to show help
 - `-p port` to set port on which server will start/on which player will try to find game
 
+# Adjusting ships number
+You can adjust ships number to be consistent with your preferences. Only thing you have to do is edit `SHIP_SIZES` array in `Utilities.py`
+Example:
+
+`SHIP_SIZES = [2,3,4]` - players will place 3 ships which sizes are respectively 2,3,4
+
+`SHIP_SIZES = [2,2,3,3,4]` - players will place 5 ships: 2x ship with size 2,
+2x ship with size 3, 1x ship with size 4
+
 # Demo
 ![Demo](img/demo.gif)
